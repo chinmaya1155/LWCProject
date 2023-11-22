@@ -1,0 +1,30 @@
+<template>
+    =======First way using for:each===================
+    <lightning-layout>
+        <lightning-layout-item>
+            <template for:each={cities} for:item=ea>
+                <p key={ea}>{ea}</p>
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>    
+    ========Second way using Iteration================<p></p>
+    <template iterator:it={cities}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+    ========Third way using JSON=======================<p></p>    
+        Employee Name : {employee.Name}<p></p>
+        Employee Age : {employee.Age}<p></p>
+        Employee Salary : {employee.Salary}<p></p>
+        Employee Company : {employee.Company}<p></p>        
+    ==========Using array of JSON Values==============================<p></p>
+    <lightning-layout>
+        <lightning-layout-item>
+            <template for:each={employees} for:item=ea1>                
+                Employee Name : {ea1.Name} 
+                Employee Age : {ea1.Age}
+                Employee Salary : {ea1.Salary}
+                Employee Company : {ea1.Company}                
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>   
+</template>

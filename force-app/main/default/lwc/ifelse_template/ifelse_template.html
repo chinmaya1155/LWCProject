@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="if else testing">
+        <lightning-button variant="brand"
+                           label={onclickbuttonlabel}
+                           onclick={handleclick}>
+        </lightning-button>
+    </lightning-card>
+    <template if:true={onvisible}>
+        <lightning-card title="hide and seek">
+            {mytitle}
+        </lightning-card>
+    </template>
+</template>

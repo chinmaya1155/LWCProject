@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Single Opp details by passing Opp Record ID" icon-name="standard:opportunity">
+        <template if:true={Opportunity.data}>
+            Opportunity Name : {name}           <p></p>
+            Opportunity Amount : {Amount}       <p></p>
+            Opportunity Stage : {StageName}     <p></p>
+        </template>
+    </lightning-card>
+</template>

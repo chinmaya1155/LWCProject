@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Let's see use of track decorator"></lightning-card>
+        <lightning-input name="fname" label="Enter First Name" onchange={handleEnter}></lightning-input>
+        <lightning-input name="lname" label="Enter Last Name" onchange={handleEnter}></lightning-input>
+    <lightning-card title="Tracking is on">
+        <h2>
+            Updated FirstName is: <b>{FullName.fname}</b>
+            <br/>
+            Updated LastName is: <b>{FullName.lname}</b>
+        </h2>
+    </lightning-card>
+</template>

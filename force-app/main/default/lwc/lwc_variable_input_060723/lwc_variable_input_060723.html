@@ -1,0 +1,24 @@
+<template>
+    <p id="action" class="slds-box slds-text-heading_small">Action icons represent actions a user can take. The default
+        size of action icons are larger than the others. <br /><br />
+        <lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved"></lightning-icon>
+        <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete"></lightning-icon>
+        <lightning-icon icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon>
+        <lightning-icon icon-name="action:preview" alternative-text="Preview" title="Preview"></lightning-icon>
+    </p>
+    <lightning-card title="Let us try inputs">
+        <lightning-layout>
+            <lightning-layout-item size="4">
+                <lightning-input label="Input your name" type="text" value={name}></lightning-input>
+                <lightning-input label="Input your city" type="text" value={city}></lightning-input>
+                <lightning-input label="Input your salary" type="number" value={sal}></lightning-input>
+                <lightning-input label="Input your DOB" type="date" value={dob}></lightning-input>
+                <lightning-button label="Calculate" onclick={Showme}></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="4">
+                <!-- <lightning-input label="Input your sur-name" type="text" value={name2}></lightning-input> -->
+                the final salary is:{finalsal}
+            </lightning-layout-item>            
+        </lightning-layout>        
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Let us Play on Numbers">
+        <lightning-layout>
+            <lightning-layout-item size="4">
+                <lightning-input label="Input first number" type="number" name="aval" onchange={callme}></lightning-input>
+                <lightning-input label="Input second number" type="number" name="bval" onchange={callme}></lightning-input>
+                <lightning-button label="Add" onclick={addme}></lightning-button>
+                <lightning-button label="Substract" onclick={sub}></lightning-button>
+                <lightning-button label="Multipy" onclick={mul}></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="4">
+                Result:{resvalue}
+            </lightning-layout-item>
+        </lightning-layout>        
+    </lightning-card>
+</template>

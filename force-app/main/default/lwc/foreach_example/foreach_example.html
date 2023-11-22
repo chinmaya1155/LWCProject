@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Show Contact First Name using for each">
+        <template if:true={cont.data}>
+            <template for:each={cont.data} for:item="mycontacts">
+                <h3 key={mycontacts.Id}>{mycontacts.FirstName}</h3>
+            </template>
+        </template>
+        <template if:true={cont.error}>            
+            {cont.error}
+        </template>
+    </lightning-card>
+</template>

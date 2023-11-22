@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create New Contact using CreateRecord">
+        <lightning-input label="Enter Contact First Name" type="text" onchange={confname}></lightning-input>
+        <lightning-input label="Enter Contact Last Name" type="text" onchange={conlname}></lightning-input>
+        <lightning-input label="Enter Contact Phone" type="text" onchange={conph}></lightning-input>
+        <lightning-input label="Enter Contact Email" type="text" onchange={conemail}></lightning-input>
+        <lightning-input label="Enter Contact Fax" type="text" onchange={confax}></lightning-input>
+        <lightning-button label="Submit" onclick={craeteanewrecord}></lightning-button>
+        <lightning-button label="Delete" onclick={deleteme}></lightning-button>
+    </lightning-card>
+</template>

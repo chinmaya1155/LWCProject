@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Calculator" style="border: 2px; color: rgb(0, 81, 255)">
+        <lightning-layout>
+            <lightning-layout-item size="3" style="border: 2px; padding: 5px;" >
+                <div>
+                    <!-- name is the aura id used to identify the field value -->
+                    <lightning-input label="Enter First Number" type="number" name="inp1" onchange={callme}></lightning-input>
+                    <lightning-input label="Enter Second Number" type="number" name="inp2" onchange={callme}></lightning-input>
+                    </br>
+                    <lightning-button label="Addition" onclick={Add}></lightning-button>   
+                    <lightning-button label="Substraction" onclick={Sub}></lightning-button>
+                    <lightning-button label="Multiplication" onclick={Mul}></lightning-button> 
+                </div>  
+                <p></p>              
+                <div>                    
+                    The Result is: {ResVal}
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
