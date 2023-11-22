@@ -12,4 +12,5 @@ public with sharing class cl_contact_050923
             throw new AuraHandledException(e.getMessage());
         }
     }    
+    
 }
